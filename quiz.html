@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Management</title>
+    <link rel="stylesheet" href="./Frontend/assets/css/style.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="questions.html">Questions</a>
+    </nav>
+    <!--Quiz Management-->
+    <div class="quiz-container">
+        <h2>Quiz Management</h2>
+
+        <!--Add question form-->
+        <form id="addquestionform" class="question-form">
+            <h3>Add New Question</h3>
+            <label for="question">Question Statement:</label>
+            <input type="text" id="question" placeholder="Enter question statement" required>
+
+            <label for="optionA">Option A:</label>
+            <input type="text" id="optionA" placeholder="Enter option A" required>
+
+            <label for="optionB">Option B:</label>
+            <input type="text" id="optionB" placeholder="Enter option B" required>
+
+            <label for="optionC">Option C:</label>
+            <input type="text" id="optionC" placeholder="Enter option C" required>
+
+            <label for="optionD">Option D:</label>
+            <input type="text" id="optionD" placeholder="Enter option D" required>
+
+            <label for="correctOption">Correct Option:</label>
+            <select id="correctOption" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+            <button type="submit">Add Question</button>
+        </form>
+        <!--question display section-->
+        <div id="questionsGrid" class="questions-grid"></div>
+    </div>
+    <script src="./Frontend/assets/js/questions.js"></script>
+</body>
+
+</html>
