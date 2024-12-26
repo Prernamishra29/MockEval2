@@ -123,4 +123,33 @@ body{
 .question-card.reviewed{
     border-color: violet;
 }
-
+main{
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color:#333 ;
+}
+.question-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+.question-card{
+    border: 2px solid violet;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.question-card h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.question-card p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
